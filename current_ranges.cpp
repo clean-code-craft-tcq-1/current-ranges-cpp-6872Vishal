@@ -1,5 +1,7 @@
 #include<iostream>
 
+using namespace std;
+
 void PrinttheRange(StartingRange,EndingRange,NoOfReads)
 {
   cout<<StartingRange<<"-"<<EndingRange<<\t<<NoOfReads+1<<\n;
