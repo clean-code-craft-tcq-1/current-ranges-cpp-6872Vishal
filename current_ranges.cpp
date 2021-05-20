@@ -8,7 +8,7 @@ void PrinttheRange(StartingRange,EndingRange,NoOfReads)
 }
 
 
-void AnalyseRange(const int* CurrentRange,int NoOfRanges)
+void AnalyseRange(const int* CurrentRange,int NoOfRanges,std::vector<StructRange*>& RangeInfo_st)
 {
   int StartRange, EndRange, NoOfReadings;
   cout<<"/*----------------------------------------------*/"<<\n;
@@ -26,6 +26,7 @@ void AnalyseRange(const int* CurrentRange,int NoOfRanges)
     else
     {
       PrinttheRange(StartRange,EndRange,NoOfReadings);
+      RangeInfo_st.push_back(new StructRange{StartRange,EndRange,NoOfReadings+1});
       StartRange = CurrentRange[i+1];
       EndRange   = CurrentRange[i+1];
       NoOfReadings = 0;
