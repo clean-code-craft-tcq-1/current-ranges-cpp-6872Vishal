@@ -1,8 +1,8 @@
 #include<iostream>
+#include"current_ranges.h"
 
-using namespace std;
 
-void PrinttheRange(StartingRange,EndingRange,NoOfReads)
+void PrinttheRange(int StartingRange,int EndingRange,int NoOfReads)
 {
   cout<<StartingRange<<"-"<<EndingRange<<\t<<NoOfReads+1<<\n;
 }
